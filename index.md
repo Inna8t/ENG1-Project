@@ -4,4 +4,9 @@
     <meta charset="utf-8">
   </head>
   <body>
+    <div class="topnav">
+      <a href="index.md">Home</a>
+      <a href="documents/index.html">Documents</a>
+      <a href="">About</a>
+    </div>
   </body>
