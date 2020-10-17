@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
 .sidenav {
     height: 100%;
     width: 0; 
@@ -53,3 +66,34 @@
   .openbtn:hover {
     background-color: #e6e6e6;
   }
+
+.top{
+    padding:0; 
+    margin:0;
+    height:180px;
+    background-image: linear-gradient(to right, #0c3e91, #0056a9, #006ec0, #0087d6, #12a0eb);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+.title{
+  color: white;
+  font-size: 60;
+ }
+
+.ghbtn {
+	background-color: transparent;
+	border-radius:5px;
+	border:2px solid white;
+    cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+    text-decoration:none;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
