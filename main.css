@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -95,7 +95,6 @@ body{
 	padding:11px 23px;
 	text-decoration:none;
 	display: block;
-	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
