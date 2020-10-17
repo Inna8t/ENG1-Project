@@ -16,12 +16,12 @@ body{
     width: 0; 
     position: fixed; 
     z-index: 1; 
-    top: 0; 
+    top: 0; /
     left: 0;
     background-color: white; 
     overflow-x: hidden; 
     padding-top: 60px; 
-    transition: 0.5s; 
+    transition: 0.5s;
   }
   
   .sidenav a {
@@ -48,6 +48,7 @@ body{
     transition: margin-left .5s;
     padding: 20px;
   }
+  
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -67,7 +68,7 @@ body{
     background-color: #e6e6e6;
   }
 
-.top{
+  .top{
     padding:0; 
     margin:0;
     height:180px;
@@ -77,24 +78,23 @@ body{
     justify-content: center;
     text-align: center;
   }
-
-.title{
-  color: white;
-  font-size: 60;
- }
+  .title{
+      color: white;
+      font-size: 60;
+  }
 
 .ghbtn {
-  background-color: transparent;
-  border-radius:5px;
-  border:2px solid white;
-  cursor:pointer;
-  color:#ffffff;
-  font-size:15px;
-  font-weight:bold;
-  padding:11px 23px;
-  text-decoration:none;
-  display: block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+	background-color: transparent;
+	border-radius:5px;
+	border:2px solid white;
+    cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+    text-decoration:none;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
