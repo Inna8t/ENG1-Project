@@ -1,100 +1,101 @@
-/** {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
 
 body{
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+
 .sidenav {
-    height: 100%;
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; /
-    left: 0;
-    background-color: white; 
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s;
+	height: 100%;
+	width: 0; 
+	position: fixed; 
+	z-index: 1; 
+	top: 0; /
+	left: 0;
+	background-color: white; 
+	overflow-x: hidden; 
+	padding-top: 60px; 
+transition: 0.5s;
   }
   
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color:#15628d;
-    display: block;
-    transition: 0.3s;
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color:#15628d;
+	display: block;
+	transition: 0.3s;
   }
   
-  .sidenav a:hover {
-    color: white;
-    background-color: #15628d;
+.sidenav a:hover {
+	color: white;
+	background-color: #15628d;
   }
   
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    font-size: 36px;
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	font-size: 36px;
   }
   
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
   }
 
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    border-color: white;
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	padding: 10px 15px;
+	border: none;
+	border-color: white;
   }
   
-  .openbtn:hover {
-    background-color: #e6e6e6;
+.openbtn:hover {
+	background-color: #e6e6e6;
   }
 
-  .top{
-    padding:0; 
-    margin:0;
-    height:180px;
-    background-image: linear-gradient(to right, #0c3e91, #0056a9, #006ec0, #0087d6, #12a0eb);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.top{
+	padding:0; 
+	margin:0;
+	height:180px;
+	background-image: linear-gradient(to right, #0c3e91, #0056a9, #006ec0, #0087d6, #12a0eb);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
   }
-  .title{
-      color: white;
-      font-size: 60;
+.title{
+	color: white;
+	font-size: 60;
   }
 
-.ghbtn {
+.ghbtn{
 	background-color: transparent;
 	border-radius:5px;
 	border:2px solid white;
-    cursor:pointer;
+	cursor:pointer;
 	color:#ffffff;
 	font-size:15px;
 	font-weight:bold;
 	padding:11px 23px;
-    text-decoration:none;
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+	text-decoration:none;
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
