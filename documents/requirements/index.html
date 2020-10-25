@@ -1,1 +1,300 @@
 
+   <head>
+        <title>Page</title>
+        <link rel="stylesheet" media="all" href="page.css" />
+    </head>
+    <body>
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+        <div class="top" id="main">
+            <h2 class="title">Project</h2>
+            <a href="#" class="ghbtn">View on Github</a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Requirements</a>
+        <a href="#">Architecture</a>
+        <a href="#">Risk assessment and mitigation</a>
+        <a href="#">Implementation</a>
+        <a href="#">Game</a>
+        <a href="#">About</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="content">
+
+                <h1>Requirements</h1>
+
+                <div class="menu">
+                    <a href=#one>Single Statement of Need</a></br>
+                    <a href=#two>How we decided our requirements</a></br>
+                    <a href=#three>User Requirements table</a></br>
+                    <a href=#four>Functional Requirements table</a></br>
+                    <a href=#five>Non-functional Requirements table</a></br>
+                    <a href=#six>Download and view</a>
+                </div>
+
+
+                <h3 id="one">SSON</h3>
+                <p>Our system is to create the game called Auber. This game is about a 
+                constable of a space station who needs to find and arrest aliens who are 
+                sabotaging the space station. The program is going to be shown on open days 
+                to prospective students.</p>
+                <h3 id="two">How we decided our requirements</h3>
+                <p>We decided our requirements based on the product brief provided to us at 
+                the beginning of the project alongside multiple customer meetings and discussion
+                 with the group. The product brief was split into multiple sections which where 
+                 the description of the game and the goals, the bullet pointed customer 
+                 requirements and finally the constraints we had to follow during the project. 
+                 The requirements were decided using both the description of the game in the first 
+                 paragraph and also the individually bullet pointed list of specific features at the 
+                 bottom of the main paragraph which described the basics of what our game must include.
+                  We had to look through the description of the game to get a good idea of the more 
+                  specific requirements that were not mentioned in the bullet points. To get the final 
+                  customer requirements we carried out several customer meetings and were informed that 
+                  we should also include a demo feature of the game that should be running on open days 
+                  or other events that would demonstrate a scripted game that shows how the game operates
+                   as if a player was playing it at the time. Based on these customer requirements we 
+                   needed to decide our functional requirements and non-functional requirements and 
+                   decided to layout our decisions in 3 separate tables as described in the “Requirements
+                    Engineering” pdf document. We decided to use this method to display our Requirements 
+                    as it allowed us to easily view the different types of requirements and how they 
+                    interacted with each other and due to the table format we could simply organize our 
+                    requirements including the relevant information for each type.</p>
+                    <div class="center"><image src="images/req_img1.png"><image src="images/req_img2.png"></div>
+                <h3 id="three">User Requirements table</h3>
+                <div class="tables">
+                    <table>
+                        <tr>
+                        <td><p><b>ID</b></p></td>
+                        <td><p><b>Description</b></p></td>
+                        <td><p><b>Priority</b></p></td>
+                        </tr>
+                        <tr>
+                        <td><p >UR_ROOM_TYPES</p></td>
+                        <td ><p >There must be at least 4 types of rooms in the station</p></td>
+                        <td ><p>Shall</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>UR_ROOM_TELEPORTERS</p></td>
+                        <td ><p>Rooms can have teleportation pads from which Auber (but not infiltrators) can teleport
+                        to any other teleportation pad in the station </p></td>
+                        <td ><p>Should</p></td>
+                        </tr>
+                        <tr >
+                        <td ><p>UR_AI_ABILITIES</p></td>
+                        <td ><p>There must be at least 3 distinct special abilities within the group of infiltrators </p></td>
+                        <td ><p>Shall</p></td>
+                        </tr>
+                        <tr>
+                        <td ><p>UR_HEAL</p></td>
+                        <td ><p>Auber can teleport to the infirmary to heal</p></td>
+                        <td ><p>Shall</p></td>
+                        </tr>
+                        <tr >
+                        <td ><p>UR_REAL_TIME</p></td>
+                        <td><p>The game must be real-time (not turn-based) </p></td>
+                        <td ><p>Shall</p></td>
+                        </tr>
+                        <tr ><td ><p >UR_NOTIFICATION</p></td>
+                        <td ><p>Auber is notified when a sabotage attempt is reported</p></td>
+                        <td ><p>Should</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>UR_AI_SABOTAGE</p></td>
+                        <td><p>The AI must attempt to destroy key systems on the ship</p></td>
+                        <td ><p>Shall</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>UR_ARREST</p></td>
+                        <td ><p>The user must be able to arrest the aliens (teleporting them to the brig)</p>
+                        </td>
+                        <td ><p>Shall</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>UR_SYSTEMS</p></td>
+                        <td><p>There must be a minimum of 15 systems for the AI to destroy</p></td>
+                        <td><p>Shall</p></td>
+                        </tr>
+                        <tr >
+                        <td><p>UR_GAME_END</p></td>
+                        <td><p>The game is lost when infiltrators have successfully destroyed more than 15 systems of
+                        the space station</p></td>
+                        <td><p>Shall</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>UR_DEMO</p></td>
+                        <td><p>The game should have a demo mode such as a premade example gameplay video</p></td>
+                        <td><p>Shall</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <h3 id="four">Functional Requirements table</h3>
+                <div class="tables">
+                    <table>
+                        <tr>
+                        <td><p><b>ID</b></p></td>
+                        <td ><p><b>Description</b></p></td>
+                        <td>
+                        <p><b>User requirements</b></p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_TELEPORTER_FUNCTION</p></td>
+                        <td><p>Users should be able to teleport to a specific teleporter or the teleporter in the
+                        adjacent room</p></td>
+                        <td><p>UR_ROOM_TELEPORTERS</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_TELEPORT_ARROWS</p></td>
+                        <td><p >Arrows displaying the location of the corresponding teleporter should appear when
+                        stepping on it</p></td>
+                        <td><p>UR_ROOM_TELEPORTERS</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_EVADE_ARREST</p></td>
+                        <td><p>The AI will attempt to evade arrest from the player</p></td>
+                        <td><p>UR_ARREST</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_RECEIVE_NOTIFICATION</p></td>
+                        <td><p>A notification icon for the room should appear to display the room/system
+                        currently being sabotaged</p></td>
+                        <td><p>UR_NOTIFICATION</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_ASSIGN_ABILITY</p></td>
+                        <td><p>At the start of the game each AI is assigned an ability</p></td>
+                        <td><p>UR_AI_ABILITIES</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_MOVEMENT</p></td>
+                        <td><p>The game will allow the user to move freely around the ship in the 4 cardinal directions</p>
+                        </td>
+                        <td><p>UR_REAL_TIME</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_HEALING_FUNCTION</p></td>
+                        <td><p>Being at the infirmary, a user should be able to heal by pressing a specific key</p></td>
+                        <td><p>UR_HEAL</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_DAMAGE</p></td>
+                        <td><p>Player should be able to take damage from certain enemies</p></td>
+                        <td><p>UR_AI_ABILITES</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_SYSTEM_DESTROYING</p></td>
+                        <td><p>Each AI is able to destroy any of the 15 key systems</p></td>
+                        <td><p>UR_SYSTEMS</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_START_DEMO</p></td>
+                        <td><p>After idling x time, or y button pressed the game should start the demo mode</p></td>
+                        <td ><p>UR_DEMO</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_ATTEMPT_SABOTAGE</p></td>
+                        <td><p>Infiltrators have abilities allowing them to sabotage the key systems</p></td>
+                        <td><p>UR_AI_SABOTAGE</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>FR_FAILED_WON</p></td>
+                        <td><p>The user is notified when all key systems have been destroyed or all infiltrators have
+                        been arrested</p></td>
+                        <td ><p>UR_GAME_END</p>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+                <h3 id="five">Non-functional Requirements table</h3>
+                <div class="tables">
+                    <table>
+                        <tr>
+                        <td><p><b>ID</b></p></td>
+                        <td><p><b>Description</b></p></td>
+                        <td><p><b>User requirements</b></p></td>
+                        <td><p><b>Fit Criteria</b></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_INSTANT_TELEPORTERS</p></td>
+                        <td><p>When teleporting the screen must update to the new location instantly</p></td>
+                        <td><p>UR_ROOM_TELEPORTERS</p></td>
+                        <td><p>Teleporter pads are identifiable to 95% of users. After teleporting the screen is
+                        updated in &lt; 3 seconds.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_UNDERSTANDABLE_NOTIFICATIONS</p></td>
+                        <td ><p>The notifications must be obvious to all players</p></td>
+                        <td><p>UR_NOTIFICATION</p></td>
+                        <td><p>The notifications are represented by obvious pictures or simple words that 90% of
+                        users would understand.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_INSTANT_NOTIFICATION</p></td>
+                        <td><p>User receives a notification instantly.</p></td>
+                        <td><p>UR_NOTIFICATION</p></td>
+                        <td><p>In 99% cases, a notification icon appears in &lt; 2 seconds.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_SCREEN_UPDATES</p></td>
+                        <td><p>The screen will update fast enough that players will not notice refreshing</p></td>
+                        <td><p>UR_REAL_TIME</p></td>
+                        <td><p>The game must play over 30-60 FPS and be controlled by the user in real time without
+                        noticeable lag.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_DYNAMIC_FRAMERATE</p></td>
+                        <td ><p>The game can support dynamic framerate.</p></td>
+                        <td><p>UR_REAL_TIME</p></td>
+                        <td><p >Each temporally dependent part of the game must be independent of the framerate, therefore the speed of the game should be
+                        consistent regardless of the framerate 95% of the time.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_HEALTH_BAR</p></td>
+                        <td><p>It should be obvious when Auber is injured.</p></td>
+                        <td ><p >UR_HEAL</p></td>
+                        <td><p>90% of users understand when Auber is injured. In 100% cases, Auber's health is
+                        fully replenished after healing at infirmary.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_SYSTEM_RECOGNISABILITY</p></td>
+                        <td><p>The key systems should be recognisable.</p></td>
+                        <td ><p>UR_SYSTEMS</p></td>
+                        <td><p >15 of the key systems are outlined and can be recognised by 95% of users. 100% of the
+                        systems that were destroyed look differently.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_SHOW_DEMO</p></td>
+                        <td><p>Every user is able to turn on the demo mode.</p></td>
+                        <td><p>UR_DEMO</p></td>
+                        <td><p>100% of users are able to turn on the demo mode at any time.</p></td>
+                        </tr>
+                        <tr>
+                        <td><p>NFR_END_NOTIFICATION</p></td>
+                        <td><p>After losing or winning every user will be notified.</p></td>
+                        <td><p>UR_GAME_END</p></td>
+                        <td><p >When the player loses or wins, there is 100% chance to receive a corresponding notification.</p></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <a href="" download="Req1" id = "six">Download a PDF file</a></br>
+                <a href="" target="_blank">View a PDF file</a>
+
+            </div>
+        </div>
+</body>
