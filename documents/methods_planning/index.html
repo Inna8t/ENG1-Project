@@ -1,1 +1,260 @@
+   <head>
+        <title>Methods and planning</title>
+        <link rel="stylesheet" media="all" href="../../main.css" />
+    </head>
+    <body>
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
 
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+        <div class="top" id="main">
+            <h2 class="title">Project</h2>
+            <a href="#" class="ghbtn">View on Github</a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://29-team.github.io/ENG1-Project">Home</a>
+        <a href="">Requirements</a>
+        <a href="index.html">Method selection and planning</a>
+        <a href="#">Architecture</a>
+        <a href="#">Risk assessment and mitigation</a>
+        <a href="#">Implementation</a>
+        <a href="#">Game</a>
+        <a href="#">About</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="content">
+              
+              <h1>Method selection and planning</h1>
+
+                <div class="menu">
+                    <a href=#one>Project Organisation</a></br>
+                    <a href=#two>Resources</a></br>
+                    <a href=#three>Justification of communication methods</a></br>
+                    <a href=#four>Justification of tools used</a></br>
+                    <a href=#five>Team organisation</a></br>
+                    <a href=#six>Project Schedule</a></br>
+                    <a href=#seven>Gantt chart</a>
+                </div>
+
+
+                <h3 id="one">Project Organisation</h3>
+                <ul class="main">
+                    <li>Team
+                        <ul class="a">
+                            <li>Michael Beal - mtb532@york.ac.uk</li>
+                            <li>Lucas Solomon - lmgs504@york.ac.uk</li>
+                            <li>Thomas Auburn - ta937@york.ac.uk</li>
+                            <li>Ryan Early - re734@york.ac.uk</li>
+                            <li>Inna Strogonova - is844@york.ac.uk</li>
+                            <li>Daniel Pearce - dp1039@york.ac.uk</li>
+                        </ul></li>
+                    <li>Clients
+                        <ul class="a">
+                            <li>Dimitris Kolovos - dimitris.kolovos@york.ac.uk</li>
+                            <li>Javier Camara - javier.camaramoreno@york.ac.uk</li>
+                            <li>Nicholas Matragkas - nicholas.matragkas@york.ac.uk</li>
+                        </ul>
+                    </li>
+                    <li>Stakeholders
+                        <ul class="a">
+                            <li>ENG1 Cohort 1</li>
+                            <li>Clients</li>
+                            <li>The University of York Communications Office</li>
+                        </ul>
+                    </li>
+                    <li>Communication mechanisms and schedule
+                        <ul class="a">
+                            <li>Discord</li>
+                            <li>Zoom</li>
+                            <li>GitHub</li>
+                            <li>Email</li>
+                            <li>Google Drive</li>
+                            <li>Deadline: Aut/9/November 25</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3 id="two">Resources</h3>
+                <ul class="main">
+                    <li>Preferences of the customer
+                        <ul class="a">
+                            <li>Must be written in Java</li>
+                            <li>Should be able to run on university machines</li>
+                            <li>Can run on multiple operating systems</li>
+                        </ul></li>
+                    <li>Tools and infrastructure:
+                        <ul class="a">
+                            <li>Java</li>
+                            <li>Gradle build tools</li>
+                            <li>Game engine</li>
+                            <li>Image manipulation software</li>
+                            <li>Personal computers</li>
+                            <li>Internet research sources</li>
+                            <li>GitHub/Git</li>
+                            <li>IDE of choice</li>
+                            <li>Google Drive</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h3 id="three">Justification of communication methods</h3>
+                <h4>Discord</h4>
+                <p>We choose to use Discord for general communication and text messaging as it has 
+                a lot of useful features such as voice communication and text messaging as well 
+                as creating specific rooms for different projects. We choose Discord instead of 
+                other applications such as Slack because more of the team has past experience using 
+                Discord.</p>
+                <h4>Email</h4>
+                <p>We are using Email to communicate with Lecturers to arrange Customer meetings and 
+                also to setup initial communication between our team members. In addition, messages 
+                that have been sent and received can be stored and searched through safely and easily.</p>
+                <h4>Zoom</h4>
+                <p>We are using Zoom as it allows us to have contact with the Lecturers (Customers) 
+                while in a Practical session. It also has the options to chat, share screen, 
+                documents and whiteboard - everything needed for team meetings</p>
+                <h4>Google Drive</h4>
+                <p>Google Drive provides an easy way to collaboratively work on files as a team and 
+                be able to see changes live. It provides an option to create a safe backup of our 
+                files and documentation on edits and changes made over time. It also allows us to 
+                control the level of access to shared documents.</p>
+                <h4>GitHub</h4>
+                <p>Used to host the code for the game. This service stores code/files using Git 
+                repositories which allows for version control and collaborative work. It also 
+                has an issue tracker that allows us to flag issues to be fixed and discussed.</p>
+
+                <h3 id="four">Justification of tools used</h3>
+                <h4>Game engine</h4>
+                <p>The game engine we have decided to use is called LibGDX. We are using this game 
+                engine because it provides an open source framework for the game to be built on 
+                providing some of the important features that we require as well as having multiple 
+                tutorials for its use online.</p>
+                <h4>Gradle build tools</h4>
+                <p>Build tools are used to automate the building of the software and manage dependencies 
+                (such as the game engine library), among other reasons. We are using Gradle because we 
+                will likely use LibGDX which is designed for this build system.</p>
+                <h4>IDE of choice</h4>
+                <p>The IDE that each team member uses doesn't matter much as long as it has modern 
+                tooling and supports our chosen build system.</p>
+
+                <h3 id="five">Team organisation</h3>
+                <h4>Team roles</h4>
+                <ul class="b">
+                    <li>Michael Beal</li>
+                    <li>Lucas Solomon</li>
+                    <li>Thomas Auburn</li>
+                    <li>Ryan Early</li>
+                    <li>Inna Strogonova</li>
+                    <li>Daniel Pearce</li>
+                </ul>
+                <h4>How the team works</h4>
+                <p>We have organised our team by trying to work through one or two deliverables 
+                at a time as a group and discussing how best to complete the task based on the 
+                lecture slides for that deliverable combined with the descriptions of how marks 
+                are allocated. We used the “eng1 team assessment” pdf that describes specifically 
+                what must be included in each section of the deliverable in “3.3.1 Deliverables for 
+                Assessment 1” as well as specifying the number of pages required for each segment 
+                of the deliverable. We also have been reading over each other’s writing as we are 
+                working on the same areas at the same time which allows each member of the team to 
+                have a clear understanding of the area we are writing about, allowing members of the 
+                team to easily ask questions to each other without confusion of the topic or explanation 
+                of what they are talking about. As we complete a deliverable we go back to the topic and 
+                insure that any changes we decided are reflected in it so that it accurately displays our 
+                current intentions, this allows us to leave areas blank that we are not currently sure about
+                 how to complete or areas that we can only decide how to fill after completing a later task .
+                 This method is appropriate for our team and for the project as a whole because it clearly 
+                 outlines what must  be submitted for each section of each deliverable and allows us a clear 
+                 understanding of what is expected. It also gives us an easier time deciding what we must 
+                 include in each segment as a blueprint for what we are writing.</p>
+
+                <h3 id="six">Project Schedule</h3>
+                <ul class = "main">
+                    <li>Auber
+                        <ul class = "a">
+                            <li>Website:
+                                <ul class = "a">
+                                    <li>Make it possible to upload files</li>
+                                    <li>Design website so it is easy locate and access</li>
+                                </ul>                                
+                            </li>
+                            <li>Requirements:
+                                <ul class = "a">
+                                    <li>Complete Introduction</li>
+                                    <li>Complete SSON
+                                        <ul class = "c">
+                                            <li>Relevant environmental assumptions</li>
+                                            <li>Associated risks</li>
+                                            <li>Potential alternatives</li>
+                                        </ul>
+                                    </li>
+                                    <li>Add a table with user requirements</li>
+                                    <li>Add tables with software requirements
+                                        <ul class = "c">
+                                            <li>Table with functional requirements</li>
+                                            <li>Table with non-functional requirements</li>
+                                        </ul>
+                                    </li>    
+                                </ul> 
+                            </li>
+                            <li>Architecture:
+                                <ul class = "a">
+                                    <li>Give a concrete representation</li>
+                                    <li>Give an abstract representation</li>
+                                    <li>Justify the representations</li>
+                                    <li>Relate the concrete representation to the requirements</li>
+                                </ul>
+                            </li>
+                            <li>Method selection and planning:
+                                <ul class = "a">
+                                    <li>Complete Project organisation</li>
+                                    <li>Complete Resources</li>
+                                    <li>Justify communication methods and tools used</li>
+                                    <li>Complete Project Schedule</li>
+                                </ul>
+                            </li>
+                            <li>Risk assessment and mitigation:
+                                <ul class = "a">
+                                    <li>Complete Introduction</li>
+                                    <li>Complete Justification</li>
+                                    <li>Complete Tabular presentation</li>
+                                </ul>
+                            </li>
+                            <li>Implementation:
+                                <ul class = "a">
+                                    <li>Decide on a coding style</li>
+                                    <li>Researching</li>
+                                    <li>Build using the Maven build system</li>
+                                    <li>Learn Java</li>
+                                    <li>Learn how to control Game engine</li>
+                                    <li>Choose the data structures</li>
+                                    <li>Build AI</li>
+                                    <li>Extensibility</li>
+                                </ul>
+                            </li>
+                            <li>Testing:
+                                <ul class = "a">
+                                    <li>Complete unit testing</li>
+                                    <li>Complete  customer testing</li>
+                                </ul>
+                            </li>  
+                        </ul>
+                    </li>
+                </ul>
+                <h3 id="seven">Gantt Chart</h3>
+
+                <a href="" download="Req1" id = "six">Download a PDF file</a></br>
+                <a href="" target="_blank">View a PDF file</a>
+
+            </div>
+        </div>
+</body>
