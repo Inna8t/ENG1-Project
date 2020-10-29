@@ -176,3 +176,12 @@ h4{
   text-decoration: underline;
   margin-bottom: 10px;
 }
+.red{
+  background-color: #FD4141;
+}
+.green{
+  background-color: #89FD41;
+}
+.orange{
+  background-color: #FD9941;
+}
