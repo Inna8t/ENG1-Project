@@ -32,9 +32,469 @@
   </div>
 
   <div id="main">
-      <button class="openbtn" onclick="openNav()">☰</button>
-  </div>
+    <button class="openbtn" onclick="openNav()">☰</button>
     <div class="content">
        <h1>Risk assessment and mitigation</h1>
+       <div class="menu">
+          <a href=#one>Introduction and justification</a></br>
+          <a href=#two>Tabular representation</a></br>
+          <a href=#three>Download and view</a>
+       </div>
+        <h3 id="one">Introduction and justification</h3>
+        <p>Risks have been identified by looking through our plan for each section then 
+        figuring out and discussing what could potentially go wrong. If a new potential 
+        risk is identified it will be posted in the Discord “risk-management channel” 
+        by a member, discussed in a meeting and then added to the risk table.</p>
+        <p>For our risk table we have decided to use project, product, people and technology 
+        as possible categories for each risk. “Project” is for issues that will affect the 
+        schedule of the project when there’s no better category. “Product” is for any issues 
+        that affect the game (our product) in terms of quality. “People” is for any issues that 
+        are caused directly by a lack of members for whatever reason. “Technology” is any 
+        software or hardware issue.</p>
+        <p>We have decided to represent severity and likelihood using a scale of low, medium 
+        and high alongside colour coding the cells with <span class="green">green</span>, <span class="orange">orange</span> and <span class="red">red</span> respectively. 
+        This was used rather than a large number scale for minimal confusion and an easy to 
+        read table. It also makes the more serious risks easy to identify and to indicate 
+        priority if multiple issues should occur. The colour coding helps to quickly identify 
+        levels of risk at a glance.<p>
+        <p>For risks that are low or easy to manage/prevent they have been assigned to all
+         members as they don’t require a dedicated owner. For more specific/technical 
+         issues, they’ve been assigned to specific members or small groups that are working 
+         on parts related to the issue as it’s more efficient to have them check and so it 
+         doesn’t disrupt the workflow of other members.</p>
+        <p>If a risk occurs in the future, the plan is for a member(s) of the group to report 
+        it in the “risk-management” channel of the group’s Discord and bring it up during a meeting. 
+        The member(s) responsible for the risk will then work to mitigate the issue. In a situation 
+        where this is for some reason impossible alternatives will be discussed.</p>
+        <h3 id="two">Tabular representation</h3>
+        <div class="tables">
+            <table>
+                <tr>
+                <td>
+                <p><b>ID</b></p>
+                </td>
+                <td >
+                <p><b>Type</b></p>
+                </td>
+                <td >
+                <p><b>Description</b></p>
+                </td>
+                <td>
+                <p ><b>Likelihood</b></p>
+                </td>
+                <td>
+                <p><b>Severity</b></p>
+                </td>
+                <td >
+                <p ><b>Mitigation</b></p>
+                </td>
+                <td>
+                <p><b>Owner</b></p>
+                </td>
+                </tr>
+                <tr>
+                <td >
+                <p>R1</p>
+                </td>
+                <td>
+                <p>Project</p>
+                </td>
+                <td >
+                <p>Google docs goes down during our group meeting.</p>
+                </td>
+                <td class="green"><p>Low</p>
+                </td>
+                <td class="red"><p >High</p>
+                </td>
+                <td >
+                <p >Keep copies of
+                files on local machines and use screen sharing or work on different files.</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td ><p>R2</p>
+                </td>
+                <td>
+                <p >Project</p>
+                </td>
+                <td >
+                <p >Accidently deleting a file from google docs</p>
+                </td>
+                <td class="green">
+                <p>Low</p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td>
+                <p >Keep a local backup on everyone's machine</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p c>R3</p>
+                </td>
+                <td >
+                <p >Project</p>
+                </td>
+                <td>
+                <p >Accidentally wiping the contents of a file while editing it</p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td >
+                <p>Google docs keeps a history of all edits and allows easy backups </p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td>
+                <p >R4</p>
+                </td>
+                <td >
+                <p >People</p>
+                </td>
+                <td >
+                <p >A team member is
+                sick during a meeting and can't show up</p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td >
+                <p >Make sure multiple
+                people know how to complete an activity and insure that all work is completed
+                with enough time to allow for sickness</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R5</p>
+                </td>
+                <td >
+                <p >People</p>
+                </td>
+                <td >
+                <p >The team leader is
+                sick and can't show up for a week</p>
+                </td>
+                <td class="green">
+                <p >Low</span></p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td >
+                <p >Make sure people
+                know what they need to be doing so that they can work on the project.</p>
+                </td>
+                <td >
+                <p >Michael</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R6</p>
+                </td>
+                <td >
+                <p >Product</p>
+                </td>
+                <td >
+                <p >The game engine
+                that we decide to use doesn't work the way we thought it would.</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td >
+                <p >Make sure we can
+                program important features without needing to rely on the game engine.</p>
+                </td>
+                <td >
+                <p>All</p>
+                </td>
+                </tr>
+                <tr>
+                <td >
+                <p >R7 </p>
+                </td>
+                <td >
+                <p >Product</p>
+                </td>
+                <td >
+                <p >We could not complete all parts
+                of the user requirements in time for the hand in.</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td class="orange">
+                <p>Medium</p>
+                </td>
+                <td >
+                <p >Make sure that the other
+                important deliverables are completed with plenty of time to spare and insure
+                that the key features of the game are working correctly</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R8</p>
+                </td>
+                <td >
+                <p >Product/ Project</p>
+                </td>
+                <td >
+                <p >Programmers are not used to
+                using a different IDE then they're used.</p>
+                </td>
+                <td class="orange">
+                <p>Medium</p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td >
+                <p Make sure everyone has time to
+                get used to using a new IDE and research the features that it has.</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td ><p>R9 </p>
+                </td>
+                <td >
+                <p >Product/Project</p>
+                </td>
+                <td >
+                <p >During requirements phase we
+                misunderstood a key part of the user requirements</p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td >
+                <p >Check with the customer with
+                all our requirements and ensure that we understand exactly what they want us
+                to produce.</p>
+                </td>
+                <td>
+                <p >Ryan and Michael</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R10 </p>
+                </td>
+                <td >
+                <p >Project</p>
+                </td>
+                <td >
+                <p >Software being used to generate
+                graphics (class diagrams, Gantt charts, state diagrams) becomes unavailable </p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td >
+                <p >Keep copies of all the graphics
+                as pngs or other file formats so they can be manually reproduced using
+                different software if required</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td ><p>R11</p>
+                </td>
+                <td >
+                <p >Technology</p>
+                </td>
+                <td >
+                <p >The program runs above 30 fps
+                on some users machines but below 30 fps on the university machines.</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td >
+                <p class=MsoNormal style='line-height:normal'>Remote log into the university
+                machines or travel into the university to run a copy of the game on the
+                actual hardware.</p>
+                </td>
+                <td >
+                <p >Michael</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R12</p>
+                </td>
+                <td >
+                <p >Product/People</p>
+                </td>
+                <td >
+                <p >Poor communication causes
+                people to code the same tool twice.</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td class="green">
+                <p>Low</p>
+                </td>
+                <td >
+                <p >Coders should keep a record of
+                what they are currently working on as well as keeping the Github updated</p>
+                </td>
+                <td >
+                <p >Coders</p>
+                </td>
+                </tr>
+                <tr >
+                <td ><p>R13</p>
+                </td>
+                <td >
+                <p >Product</p>
+                </td>
+                <td >
+                <p >The coding is not completed in
+                time for the handin so the final part of the architecture deliverable cannot
+                be completed</p>
+                </td >
+                <td class="orange"><p>Medium</span></p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td >
+                <p >The architecture deliverable
+                should be updated when it's clear that the task won't be finished to include
+                a concrete architecture based only on what has been completed in time.</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R14</p>
+                </td>
+                <td>
+                <p >Project</p>
+                </td>
+                <td >
+                <p >Discord goes down before/during
+                our out-of-session meetings</p>
+                </td>
+                <td class="green">
+                <p>Low</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td >
+                <p >Have backup options such as
+                zoom, google meets and contact everyone about which we'll use via email. Also
+                don't upload anything important to chat rooms without having a copy on
+                someone's pc.</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R15</p>
+                </td>
+                <td >
+                <p >Product</p>
+                </td>
+                <td >
+                <p >Diagrams take up too much space
+                of our total page count for a deliverable.</p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td class="orange">
+                <p >Medium</p>
+                </td>
+                <td >
+                <p >Make diagrams smaller or make
+                the font smaller. </p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p >R16</p>
+                </td>
+                <td >
+                <p >Business</p>
+                </td>
+                <td>
+                <p >Users having different
+                incompatible versions of the same software.</p>
+                </td>
+                <td class="green">
+                <p >Low</p>
+                </td>
+                <td class="red">
+                <p >High</p>
+                </td>
+                <td >
+                <p >Ensure all users are using the
+                same versions of critical software from the start.</p>
+                </td>
+                <td >
+                <p >All</p>
+                </td>
+                </tr>
+            </table>
+        </div>
+
+        <a href="" download="Req1" id = "three">Download a PDF file</a></br>
+        <a href="" target="_blank">View a PDF file</a>
+      </div>
+    </div>
   
  </body>
