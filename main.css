@@ -185,3 +185,22 @@ h4{
 .orange{
   background-color: #FD9941;
 }
+.imglink{
+  font-size: 18px;
+}
+.state{
+  width:100%;
+  margin-top: 40px;
+}
+.arch{
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-decoration: none;
+}
+.seq{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+}
